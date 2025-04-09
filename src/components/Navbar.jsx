@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import '../styles/Navbar.css';
-import logo from '../assets/logo-darks.webp';
+import logo from '../assets/logo-darks.png';
+
 
 const Navbar = ({ isAuthenticated, handleLogout }) => {
   const [menuOpen, setMenuOpen] = useState(false);

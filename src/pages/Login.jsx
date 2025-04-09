@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Login.css';
-import Logo from '../assets/Dark_Logo.webp';
+import Logo from '../assets/Dark_logo.png';
 import Video  from '../assets/login-video.mp4';
 
 const Login = ({ setIsAuthenticated }) => {
