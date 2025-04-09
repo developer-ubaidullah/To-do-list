@@ -1,0 +1,102 @@
+.home {
+    background: #ffffff;
+    padding: 30px 0;
+  }
+  
+  .container {
+    background-color: #034C53;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    z-index: 99999;
+    color: #F38C79;
+    margin-bottom: 1rem;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50px); /* Start off-screen */
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #F38C79;
+    margin-bottom: 2rem;
+  }
+
+  .span1{
+    background: linear-gradient(to bottom, #363838, #101111);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .span2{
+    background: linear-gradient(to bottom, #35fbf2, #0c9790);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+    .span3{
+        background: linear-gradient(to bottom, #ffd700, #fe5f0f);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+  
+  .btn {
+    background-color: #474747;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #242729;
+  }
+  
+  .wave,
+  .wav {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .wav {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -8px;
+    transform: rotate(180deg);
+  }
+  
+  .footer {
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    margin-top: -10px;
+  }
+  
+  /* Add animation effect to the wave on scroll */
+  .wave svg path {
+    transition: transform 0.5s ease;
+  }
+  
+  /* Parallax scrolling effect */
+  .home {
+    position: relative;
+  }
+  
+  .home .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+       padding: 15px 0;
+      }
+      
+  }
+  
